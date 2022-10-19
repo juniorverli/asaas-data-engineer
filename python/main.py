@@ -15,7 +15,7 @@ MYSQL_PASSWORD_ROOT = ''
 
 #Conectando ao banco de dados
 cnx = mysql.connector.connect(
-    host="localhost", user=MYSQL_USER, password=MYSQL_PASSWORD_ROOT, database="db", port="3306")
+    host="db", user=MYSQL_USER, password=MYSQL_PASSWORD_ROOT, database="db", port="3306")
 cursor = cnx.cursor()
 
 #Função de conexão aos endpoints para retornar o json
